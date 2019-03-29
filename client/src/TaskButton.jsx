@@ -10,8 +10,8 @@ import Button from 'react-bootstrap/Button';
         return (
             <div className="TaskButton" onClick={ goToTask }>
                 <h3 className="task-name"> { name }</h3>
-                <p classsName="description">{ description }</p>
-                <p className="pricing">     { pricing }</p>
+                {/* <p classsName="description">{ description }</p>
+                <p className="pricing">     { pricing }</p> */}
                 
             </div>
         )

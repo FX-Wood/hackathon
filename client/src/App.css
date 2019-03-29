@@ -20,3 +20,15 @@
   margin-left: 20px;
   margin-top: 20px;
 }
+
+.NavBar {
+  background-color: #000;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+

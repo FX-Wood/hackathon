@@ -7,13 +7,38 @@ import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state ={
+      userProfile = {
+        name: '',
+        weaponOfChoice: '',
+        taskHistory: [],
+        activeTasks: [],
+        selectedTask: {}
+      },
+    }
+    this.chooseTask = this.chooseTask.bind(this)
+  }
+  chooseTask(task) {
+    console.log('choosing this task', task)
+    this.setState({
+      selectedTask: task
+    })
+  }
   render() {
     return (
       <div className="App">
         <BrowserRouter >
-          <ChooseTaskPage />
-          <TaskOptionsPage />
-          <ProgressPage />
+        <Route 
+          path="/missions"
+          render={ () => <ChooseTaskPage chooseTask={ this.chooseTask } /> } />
+        <Route
+          path="/congfiguration"
+          component={ TaskOptionsPage } />
+        <Route
+          path="/progress"
+          conponent={ ProgressPage } />
           <NavBar />
         </BrowserRouter>
       </div>

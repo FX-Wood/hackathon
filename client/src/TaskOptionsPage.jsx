@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TaskOption from './TaskOption';
 import TaskCard from './TaskCard';
+import Header from './Header';
 
 class TaskOptionsPage extends Component {
     constructor(props) {
@@ -16,7 +17,7 @@ class TaskOptionsPage extends Component {
         }
         return ( 
             <div className="TaskOptionsPage">
-                <h3>Options</h3>
+                <Header pagename={this.props.task.name} />
                 {options}
             </div>
         )

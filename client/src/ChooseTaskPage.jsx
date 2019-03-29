@@ -2,26 +2,27 @@ import React, {Component} from 'react';
 import TaskButton from './TaskButton';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from './LogoCircle.svg'
+import Header from './Header';
 
 const tasks = [
     {
-        name: 'dry cleaning',
-        description: 'pick up your dry cleaning',
-        pricing: '20kw',
+        name: 'CLEAN',
+        // description: 'pick up your dry cleaning',
+        // pricing: '20kw',
         options: [
-            {name: 'house', duration: 60 * 4 },
-            {name: 'panic room', duration: 60 * 2 },
-            {name: 'light dusting', duration: 60 * 1}
+            {name: 'DUST HOUSE', duration: 60 * 4 },
+            {name: 'VACUUM HOUSE', duration: 60 * 2 },
+            {name: 'CAR DETAIL', duration: 60 * 1}
         ]
     },
     {
-        name: 'kill',
-        description: 'kill discriminately',
-        pricing: '3000kw',
+        name: 'KILL',
+        // description: 'kill discriminately',
+        // pricing: '3000kw',
         options: [
-            {name: 'softly', meanFactor: 100},
-            {name: 'assassin in the night', meanFactor: 0},
-            {name: 'public assassination', meanFactor: 9000}
+            {name: 'SPIDER', meanFactor: 100},
+            {name: 'ROBOT', meanFactor: 0},
+            {name: 'HUMAN', meanFactor: 9000}
         ]
     }
 ]
@@ -38,10 +39,9 @@ class ChooseTaskPage extends Component {
         return (
             <Link to="/configure">
                 <div className="ChooseTaskPage">
-                    <div className='choose-task'>
-                    <h1>ROD</h1>
-                    <h4><em>Robots on demand</em></h4>
+                    <Header />
                     <Logo />
+                    <div className='choose-task'>
                     {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.props.chooseTask( task )} />)}
                     </div>
                 </div>

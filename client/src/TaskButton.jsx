@@ -6,9 +6,9 @@ import Button from 'react-bootstrap/Button';
 //         super(props)
 //     }
 //     render() {
-    const TaskButton = ({ name, description, options, pricing }) => {
+    const TaskButton = ({ name, description, options, pricing, goToTask }) => {
         return (
-            <div className="TaskButton" >
+            <div className="TaskButton" onClick={ goToTask }>
                 <h3 className="task-name">  { name }</h3>
                 <p classsName="description">{ description }</p>
                 <p className="pricing">     { pricing }</p>

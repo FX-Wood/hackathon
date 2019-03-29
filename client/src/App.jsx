@@ -3,6 +3,7 @@ import './App.css';
 import ChooseTaskPage from './ChooseTaskPage';
 import TaskOptionsPage from './TaskOptionsPage';
 import ProgressPage from './ProgressPage';
+import ReviewPage from './ReviewPage';
 import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
 
@@ -39,6 +40,9 @@ class App extends Component {
         <Route
           path="/progress"
           component={ ProgressPage } />
+        <Route
+          path="/review"
+          render={ () => <ReviewPage />} />
           <NavBar />
         </BrowserRouter>
       </div>

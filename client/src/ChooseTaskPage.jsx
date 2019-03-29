@@ -41,7 +41,9 @@ class ChooseTaskPage extends Component {
                 <div className="ChooseTaskPage">
                     <Header />
                     <Logo />
-                    <div className='task-question'>What would you like to do today?</div>
+                    <div className='task-question'>
+                    <p>What would you like to do today?</p>
+                    </div>
                     <div className='choose-task'>
                     {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.props.chooseTask( task )} />)}
                     </div>

@@ -3,6 +3,7 @@ import './App.css';
 import ChooseTaskPage from './ChooseTaskPage';
 import TaskOptionsPage from './TaskOptionsPage';
 import ProgressPage from './ProgressPage';
+import ReviewPage from './ReviewPage';
 import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
 import ReviewPage from './ReviewPage';

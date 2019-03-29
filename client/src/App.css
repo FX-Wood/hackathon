@@ -23,7 +23,7 @@ body {
 }
 
 .ChooseTaskPage {
-  text-align: left;
+  text-align: center;
 }
 
 .ChooseTaskPage h1, h4 {
@@ -50,6 +50,7 @@ h3 {
 .choose-task {
   text-align: center;
   justify-content: center;
+  padding: 0 3em;
 }
 
 .Header {
@@ -67,6 +68,7 @@ h3 {
   padding: 0 10px;
   color: #ff3b3f;
 }
+
 
 .TaskOptionsPage {
   height: 100vh;
@@ -94,4 +96,23 @@ h3 {
   box-shadow: 1.5px 1.5px 0 0 lightgray;
   background-color: #a6ecfb;
   text-align: center;
+}
+.task-question {
+  text-align: center;
+  color: #FF3B3F;
+  margin: 40px;
+  font-size: 24px;
+}
+
+.location {
+  border: 1px solid gray;
+  margin: 20px;
+}
+
+.notes {
+  border: 1px solid gray;
+}
+
+.ReviewTask {
+
 }

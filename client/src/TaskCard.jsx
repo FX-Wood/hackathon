@@ -5,7 +5,7 @@ const TaskCard = (props) => {
     return (
         <div className='TaskCard PrimaryButton'>
             <div className='task-info'>
-                <Link to='/progress'>
+                <Link to='/review'>
                 <h3>{props.name}</h3>
                 </Link>
             </div>

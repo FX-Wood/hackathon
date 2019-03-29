@@ -11,3 +11,5 @@ const TaskOption = (props) => {
         </div>
     )
 }
+
+export default TaskOption;

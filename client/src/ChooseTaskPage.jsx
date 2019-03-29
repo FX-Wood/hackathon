@@ -30,7 +30,6 @@ class ChooseTaskPage extends Component {
         this.state = {
             currentTask: {}
         }
-        this.chooseTaskHandler() = this.chooseTaskHandler.bind(this)
     }
     render() {
 

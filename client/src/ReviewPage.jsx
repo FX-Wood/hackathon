@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header';
+import TaskButton from './TaskButton';
 
 class ReviewPage extends Component {
     render() {
@@ -13,6 +14,11 @@ class ReviewPage extends Component {
                     <input type='text' className='notes' placeholder='Notes' />
                     </form>
                 </div>
+                <Link to='/progress'>
+                    <div className='PrimaryCase'>
+                        <h3>CLEAN</h3>
+                    </div>
+                </Link>
             </div>
         )
     }

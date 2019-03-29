@@ -6,7 +6,6 @@ import ProgressPage from './ProgressPage';
 import ReviewPage from './ReviewPage';
 import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ReviewPage from './ReviewPage';
 
 class App extends Component {
   constructor(props) {
@@ -42,7 +41,7 @@ class App extends Component {
           path="/progress"
           component={ ProgressPage } />
         <Route
-          path="/review" />
+          path="/review"
           component={ ReviewPage } />
           <NavBar />
         </BrowserRouter>

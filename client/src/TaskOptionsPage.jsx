@@ -18,7 +18,11 @@ class TaskOptionsPage extends Component {
         return ( 
             <div className="TaskOptionsPage">
                 <Header pagename={this.props.task.name} />
-                {options}
+                <div className="verticalWrap">
+                    <div className="TaskOptionsButtonsBox">
+                        {options}
+                    </div>
+                </div>
             </div>
         )
     }

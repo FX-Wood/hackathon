@@ -21,7 +21,7 @@ body {
 }
 
 .ChooseTaskPage {
-  text-align: left;
+  text-align: center;
 }
 
 .ChooseTaskPage h1, h4 {
@@ -61,6 +61,7 @@ h3 {
 .choose-task {
   text-align: center;
   justify-content: center;
+  padding: 0 3em;
 }
 
 .Header {
@@ -72,4 +73,13 @@ h3 {
   padding: 0 10px;
   color: #ff3b3f;
 }
+
+.task-question {
+  text-align: center;
+  color: #FF3B3F;
+  margin: 40px;
+  /* font-size: 24px; */
+}
+
+
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TaskButton from './TaskButton';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from './LogoCircle.svg'
 
 const tasks = [
     {
@@ -39,6 +40,7 @@ class ChooseTaskPage extends Component {
                 <div className="ChooseTaskPage">
                     <h1>ROD</h1>
                     <h4><em>Robots on demand</em></h4>
+                    <Logo />
                     {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.props.chooseTask( task )} />)}
                 </div>
             </Link>

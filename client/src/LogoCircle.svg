@@ -1,11 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="375px" height="300px" >
     <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="212.311543%" gradientTransform="translate(0.500000,0.500000),scale(0.227723,1.000000),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A7EDFB" offset="100%"></stop>
+        </radialGradient>
         <radialGradient cx="48.0871842%" cy="50%" fx="48.0871842%" fy="50%" r="93.5443858%" id="radialGradient-2">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#5BDCF8" offset="100%"></stop>
         </radialGradient>
     </defs>
-    <g fill="url(#radialGradient-2)" id="Group" transform="translate(110.000000, 138.000000)">
-    <circle id="Oval" cx="78.5" cy="77.5" r="77.5"></circle>
+        <g id="Group" transform="translate(110.000000, 110.000000)">
+            <circle id="Oval" fill="url(#radialGradient-2)" cx="78.5" cy="77.5" r="95"></circle>
+            <text id="CLEAN" font-family="Source Sans Pro" font-size="28" font-weight="bold" fill="#FF3B3F">
+                <tspan x="36" y="55">CLEAN</tspan>
+            </text>
+            <text id="&amp;" font-family="Source Sans Pro" font-size="28" font-weight="bold" fill="#FF3B3F">
+                <tspan x="70.05" y="83">&amp;</tspan>
+            </text>
+            <text id="KILL" font-family="Source Sans Pro" font-size="28" font-weight="bold" fill="#FF3B3F">
+                <tspan x="48" y="110">KILL</tspan>
+            </text>
+        </g>
     </g>
 </svg>

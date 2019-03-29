@@ -37,9 +37,11 @@ class ChooseTaskPage extends Component {
         return (
             <Link to="/configure">
                 <div className="ChooseTaskPage">
+                    <div className='choose-task'>
                     <h1>ROD</h1>
                     <h4><em>Robots on demand</em></h4>
                     {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.props.chooseTask( task )} />)}
+                    </div>
                 </div>
             </Link>
         )

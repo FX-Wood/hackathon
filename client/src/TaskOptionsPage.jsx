@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TaskOption from './TaskOption';
+import TaskCard from './TaskCard';
 
 class TaskOptionsPage extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class TaskOptionsPage extends Component {
         let options;
         if (this.props.task) {
             options = this.props.task.options.map((option, i) => {
-                return <div key={i} className="option"><span>This is an option, {option.name}</span></div>
+                return <TaskCard key={i} name={option.name} />
             })
         }
         return ( 

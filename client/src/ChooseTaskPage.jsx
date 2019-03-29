@@ -19,7 +19,7 @@ const tasks = [
         pricing: '3000kw',
         options: [
             {name: 'softly', meanFactor: 100},
-            {name: 'assassin in the nigt', meanFactor: 0},
+            {name: 'assassin in the night', meanFactor: 0},
             {name: 'public assassination', meanFactor: 9000}
         ]
     }

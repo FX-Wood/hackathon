@@ -1,12 +1,12 @@
 body {
-  background-color: #424242
+  background-color: #fff;
 }
 
 .App {
   text-align: center;
   margin: 0;
   padding: 0;
-  color: whitesmoke;
+  color: #ff3b3f;
 }
 
 .TaskButton {
@@ -35,5 +35,23 @@ body {
   position: fixed;
   bottom: 0;
   width: 100vw;
+}
+
+.TaskCard {
+  border: 1px solid #ff3b3f;
+  border-radius: 5px;
+  height: 140px;
+  padding: 0 10px;
+  margin: 20px 20px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-items: center;
+}
+
+h3 {
+  color: #ff3b3f;
 }
 

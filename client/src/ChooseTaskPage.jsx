@@ -27,6 +27,10 @@ const tasks = [
 class ChooseTaskPage extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            currentTask: {}
+        }
+        this.chooseTaskHandler() = this.chooseTaskHandler.bind(this)
     }
     render() {
 
@@ -34,7 +38,7 @@ class ChooseTaskPage extends Component {
             <div className="ChooseTaskPage">
                 <h1>ROD</h1>
                 <h4><em>Robots on demand</em></h4>
-                {tasks.map((task, i) => <TaskButton key={ i } {...task} />)}
+                {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.chooseTaskHandler( task )} />)}
             </div>
         )
     }

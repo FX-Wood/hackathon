@@ -9,10 +9,10 @@ class NavBar extends Component {
     render() {
         return (
             <div className='NavBar'>
-                <Link to='/missions'><Home style={{color: '#ff3b3f', fontSize: 40}} /></Link>
-                <Link to='/progress'><PlaylistAddCheck style={{color: '#ff3b3f', fontSize: 40}} /></Link>
+                <Link to='/'><Home style={{color: '#ff3b3f', fontSize: 40}} /></Link>
+                <Link to='/configure'><PlaylistAddCheck style={{color: '#ff3b3f', fontSize: 40}} /></Link>
                 <Link to='/history'><History style={{color: '#ff3b3f', fontSize: 40}} /></Link>
-                <Link to='/profile'><Fingerprint style={{color: '#ff3b3f', fontSize: 40}} /></Link>
+                <Link to='/review'><Fingerprint style={{color: '#ff3b3f', fontSize: 40}} /></Link>
             </div>
         )
     }

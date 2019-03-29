@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import ProgWheel from './ProgWheel';
 import CircularProgressbar from 'react-circular-progressbar';
+import Header from './Header';
+import './radialIndicator.jpg';
 
 class ProgressPage extends Component {
     constructor(props) {
@@ -37,11 +39,11 @@ class ProgressPage extends Component {
     render() {
         return (
             <div className='ProgressBar'>
-                <h3>Progress Page</h3>
-                <div className="progress" style={{width: '80vw', height: '300px'}}>
-                    <CircularProgressbar percentage={60}/>
+                <Header pagename='Dashboard' />
+                <div className="verticalWrap">
+                    <img src="./radialIndicator.jpg" alt=""/>
+                    <h3 className="progressDashboard">[ Robot progress dashboard ]</h3>
                 </div>
-                <ProgWheel progress={ 60 } label={`${this.state.progress}%`} />
             </div>
         )
     }

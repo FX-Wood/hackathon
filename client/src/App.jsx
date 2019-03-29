@@ -5,6 +5,7 @@ import TaskOptionsPage from './TaskOptionsPage';
 import ProgressPage from './ProgressPage';
 import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
+import ReviewPage from './ReviewPage';
 
 class App extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class App extends Component {
       <div className="App">
         <BrowserRouter >
         <Route 
-          path="/missions"
+          path="/"
           render={ () => <ChooseTaskPage chooseTask={ this.chooseTask } /> } />
         <Route
           path="/configure"
@@ -39,6 +40,9 @@ class App extends Component {
         <Route
           path="/progress"
           component={ ProgressPage } />
+        <Route
+          path="/review" />
+          component={ ReviewPage } />
           <NavBar />
         </BrowserRouter>
       </div>

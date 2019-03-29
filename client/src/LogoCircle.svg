@@ -11,13 +11,13 @@
     </defs>
         <g id="Group" transform="translate(110.000000, 110.000000)">
             <circle id="Oval" fill="url(#radialGradient-2)" cx="78.5" cy="77.5" r="95"></circle>
-            <text id="CLEAN" font-family="Source Sans Pro" font-size="28" font-weight="bold" fill="#FF3B3F">
+            <text id="CLEAN" font-family="Roboto" font-size="28" font-weight="bold" fill="#FF3B3F">
                 <tspan x="36" y="55">CLEAN</tspan>
             </text>
-            <text id="&amp;" font-family="Source Sans Pro" font-size="28" font-weight="bold" fill="#FF3B3F">
+            <text id="&amp;" font-family="Roboto" font-size="28" font-weight="bold" fill="#FF3B3F">
                 <tspan x="70.05" y="83">&amp;</tspan>
             </text>
-            <text id="KILL" font-family="Source Sans Pro" font-size="28" font-weight="bold" fill="#FF3B3F">
+            <text id="KILL" font-family="Roboto" font-size="28" font-weight="bold" fill="#FF3B3F">
                 <tspan x="48" y="110">KILL</tspan>
             </text>
         </g>

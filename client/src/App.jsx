@@ -4,15 +4,18 @@ import ChooseTaskPage from './ChooseTaskPage';
 import TaskOptionsPage from './TaskOptionsPage';
 import ProgressPage from './ProgressPage';
 import NavBar from './NavBar';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">   
-        <ChooseTaskPage />
-        <TaskOptionsPage />
-        <ProgressPage />
-        <NavBar />
+      <div className="App">
+        <BrowserRouter >
+          <ChooseTaskPage />
+          <TaskOptionsPage />
+          <ProgressPage />
+          <NavBar />
+        </BrowserRouter>
       </div>
     );
   }

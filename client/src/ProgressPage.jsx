@@ -18,7 +18,7 @@ class ProgressPage extends Component {
         return (
             <div className='ProgressBar'>
                 <h3>Task</h3>
-                <ProgressBar now={now} label={`${now}%`} />
+                {/* <ProgressBar now={now} label={`${now}%`} /> */}
             </div>
         )
     }

@@ -4,6 +4,7 @@ import './App.css';
 import ChooseTaskPage from './ChooseTaskPage';
 import TaskOptionsPage from './TaskOptionsPage';
 import ProgressPage from './ProgressPage';
+import NavBar from './NavBar';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <ChooseTaskPage />
         <TaskOptionsPage />
         <ProgressPage />
+        <NavBar />
       </div>
     );
   }

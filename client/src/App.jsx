@@ -11,9 +11,15 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter >
-          <ChooseTaskPage />
-          <TaskOptionsPage />
-          <ProgressPage />
+        <Route 
+          path="/missions"
+          componenet={ ChooseTaskPage } />
+        <Route
+          path="/congfiguration"
+          component={ TaskOptionsPage } />
+        <Route
+          path="/progress"
+          conponent={ ProgressPage } />
           <NavBar />
         </BrowserRouter>
       </div>

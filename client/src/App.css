@@ -1,13 +1,14 @@
 body {
   background-color: #fff;
+  height: 100vh;
 }
-
 .App {
   text-align: center;
   margin: 0;
   padding: 0;
   color: #ff3b3f;
   font-weight: bold;
+  height: 100vh;
 }
 
 .TaskButton {
@@ -40,19 +41,6 @@ body {
   width: 100vw;
 }
 
-.TaskCard {
-  border: 1px solid #ff3b3f;
-  border-radius: 5px;
-  height: 140px;
-  padding: 0 10px;
-  margin: 20px 20px;
-  margin-bottom: 0.5rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-items: center;
-}
 
 h3 {
   color: #ff3b3f;
@@ -73,3 +61,22 @@ h3 {
   color: #ff3b3f;
 }
 
+.TaskOptionsPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.PrimaryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FF3B3F;
+  border-radius: 50px;
+  margin: 1em;
+  padding: 1em;
+  box-shadow: 1.5px 1.5px 0 0 lightgray;
+  background-color: #a6ecfb;
+  text-align: center;
+}

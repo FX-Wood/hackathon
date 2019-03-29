@@ -34,11 +34,11 @@ class App extends Component {
           path="/missions"
           render={ () => <ChooseTaskPage chooseTask={ this.chooseTask } /> } />
         <Route
-          path="/congfiguration"
-          component={ TaskOptionsPage } />
+          path="/configure"
+          render={ () => <TaskOptionsPage  task={ this.state.selectedTask } /> } />
         <Route
           path="/progress"
-          conponent={ ProgressPage } />
+          component={ ProgressPage } />
           <NavBar />
         </BrowserRouter>
       </div>

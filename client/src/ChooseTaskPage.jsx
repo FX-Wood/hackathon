@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TaskButton from './TaskButton';
+import { Link } from 'react-router-dom';
 
 const tasks = [
     {
@@ -34,11 +35,13 @@ class ChooseTaskPage extends Component {
     render() {
 
         return (
-            <div className="ChooseTaskPage">
-                <h1>ROD</h1>
-                <h4><em>Robots on demand</em></h4>
-                {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.chooseTaskHandler( task )} />)}
-            </div>
+            <Link to="/configure">
+                <div className="ChooseTaskPage">
+                    <h1>ROD</h1>
+                    <h4><em>Robots on demand</em></h4>
+                    {tasks.map((task, i) => <TaskButton key={ i } {...task} goToTask={ () => this.props.chooseTask( task )} />)}
+                </div>
+            </Link>
         )
     }
 }
